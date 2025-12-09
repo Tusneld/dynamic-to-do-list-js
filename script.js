@@ -23,6 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const listItem = document.createElement('li');
         listItem.textContent = taskText;
 
+        listItem.classList.add('todo-item');
+
         // 2. Create a new button element for removing the task.
         const removeButton = document.createElement('button');
         removeButton.textContent = "Remove";
@@ -57,3 +59,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
